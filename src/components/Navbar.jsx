@@ -9,6 +9,10 @@ function Navbar() {
   const getProjectsHandler = () => {
     navigate("/get-projects");
   };
+
+  const onboardTalentHandler = () => {
+    navigate("/onboard-talent");
+  };
   const openSide = () => {
     setSide(!side);
   };
@@ -37,7 +41,10 @@ function Navbar() {
           >
             Get Projects
           </button>
-          <button className="text-xl  text-white bg-black p-5 rounded-full w-52">
+          <button
+            onClick={onboardTalentHandler}
+            className="text-xl  text-white bg-black p-5 rounded-full w-52"
+          >
             Onboard Talent
           </button>
         </div>

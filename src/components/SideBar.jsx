@@ -5,6 +5,9 @@ export const SideBar = () => {
   const getProjectsHandler = () => {
     navigate("/get-projects");
   };
+  const onboardTalentHandler = () => {
+    navigate("/onboard-talent");
+  };
   return (
     <>
       <div className="w-full h-screen flex flex-col items-center justify-center gap-4">
@@ -14,7 +17,10 @@ export const SideBar = () => {
         >
           Get Projects
         </button>
-        <button className="text-xl  text-white bg-black p-5 rounded-full w-52">
+        <button
+          onClick={onboardTalentHandler}
+          className="text-xl  text-white bg-black p-5 rounded-full w-52"
+        >
           Onboard Talent
         </button>
       </div>
