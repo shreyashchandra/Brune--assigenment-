@@ -45,7 +45,7 @@ function Navbar() {
           className=" lg:hidden rounded-full border border-solid border-gray-300 p-2 "
           onClick={openSide}
         >
-          <img src="/burger.svg" alt="menu" className="w-6" />
+          <img src="/burger-side.svg" alt="menu" className="w-6" />
         </button>
       </div>
       {side && <SideBar />}
