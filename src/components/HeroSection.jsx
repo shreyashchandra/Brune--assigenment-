@@ -22,7 +22,7 @@ function HeroSection() {
           </p>
         </div>
 
-        <div className="flex justify-between mt-14">
+        <div className="flex flex-col md:flex-row justify-between mt-14">
           <div className="flex relative">
             <img
               src="/hero.png"
@@ -63,7 +63,7 @@ function HeroSection() {
           </div>
 
           <div className="w-[300px] p-4 mt-10 mx-7">
-            <h1 className="text-3xl font-medium">
+            <h1 className="text-xl md:text-3xl font-medium">
               Enhance fortune 50 company’s insights teams research capabilities
             </h1>
             <div className="mt-5 ml-0 ">

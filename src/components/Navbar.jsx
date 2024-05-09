@@ -1,10 +1,16 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { SideBar } from "./SideBar";
 
 function Navbar() {
   const navigate = useNavigate();
+  const [side, setSide] = useState(false);
 
   const getProjectsHandler = () => {
     navigate("/get-projects");
+  };
+  const openSide = () => {
+    setSide(!side);
   };
   return (
     <>
@@ -23,10 +29,11 @@ function Navbar() {
             />
           </svg>
         </h1>
-        <div className="flex gap-2 items-center p-3">
+
+        <div className="lg:flex gap-2 items-center p-3 hidden">
           <button
             onClick={getProjectsHandler}
-            className="text-xl  rounded-full border border-solid border-gray-300 p-5 w-48"
+            className="text-xl rounded-full border border-solid border-gray-300 p-5 w-48"
           >
             Get Projects
           </button>
@@ -34,7 +41,14 @@ function Navbar() {
             Onboard Talent
           </button>
         </div>
+        <button
+          className=" lg:hidden rounded-full border border-solid border-gray-300 p-2 "
+          onClick={openSide}
+        >
+          <img src="/burger.svg" alt="menu" className="w-6" />
+        </button>
       </div>
+      {side && <SideBar />}
     </>
   );
 }

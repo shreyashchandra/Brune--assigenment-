@@ -7,7 +7,7 @@ function Accordian() {
 
   return (
     <>
-      <div className="p-6 mx-32 bg-accordian-new rounded-3xl">
+      <div className=" flex flex-col items-center md:block p-6 md:mx-32 bg-accordian-new rounded-3xl">
         <h1>
           <svg
             width="215"
@@ -23,7 +23,7 @@ function Accordian() {
           </svg>
         </h1>
         <h1 className="text-4xl p-2 font-semibold">Ask Questions</h1>
-        <div className="flex gap-3">
+        <div className="text-sm md:text-lg flex items-center flex-col md:flex-row gap-3">
           <div className="w-1/3 p-4 mt-5 ">
             <img src="/arrow.svg" alt="arrow" />
           </div>
