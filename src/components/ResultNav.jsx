@@ -1,4 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 function Navbar() {
+  const navigate = useNavigate();
+
+  const handleHome = () => {
+    navigate("/");
+  };
   return (
     <>
       <div className=" rounded-full border border-solid border-gray-300 md:pl-5 py-4 md:pr-3 mt-5 md:mx-32 flex items-center justify-between">
@@ -16,7 +23,10 @@ function Navbar() {
             />
           </svg>
         </h1>
-        <button className=" rounded-full border border-solid border-gray-300 p-2 ">
+        <button
+          onClick={handleHome}
+          className=" rounded-full border border-solid border-gray-300 p-2 "
+        >
           <img src="/cross-svg.svg" alt="menu" className="w-6" />
         </button>
       </div>

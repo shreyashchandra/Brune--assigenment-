@@ -53,9 +53,9 @@ function Navbar() {
           onClick={openSide}
         >
           {side ? (
-            <img src="/burger-side.svg" alt="menu" className="w-6" />
-          ) : (
             <img src="/cross-svg.svg" alt="menu" className="w-6" />
+          ) : (
+            <img src="/burger-side.svg" alt="menu" className="w-6" />
           )}
         </button>
       </div>
