@@ -6,7 +6,7 @@ export const SideBar = () => {
     navigate("/get-projects");
   };
   const onboardTalentHandler = () => {
-    navigate("/onboard-talent");
+    navigate("/");
   };
   return (
     <>

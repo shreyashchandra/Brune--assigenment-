@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   const onboardTalentHandler = () => {
-    navigate("/onboard-talent");
+    navigate("/");
   };
   const openSide = () => {
     setSide(!side);
