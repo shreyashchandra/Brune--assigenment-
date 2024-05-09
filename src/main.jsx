@@ -10,12 +10,14 @@ import {
 } from "react-router-dom";
 import Register from "./pages/Register.jsx";
 import { HomePage } from "./pages/HomePage.jsx";
+import { Result } from "./pages/Result.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="/" element={<HomePage />} />
       <Route path="/get-projects" element={<Register />} />
+      <Route path="/result" element={<Result />} />
     </Route>
   )
 );

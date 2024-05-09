@@ -1,21 +1,4 @@
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
-import { SideBar } from "./SideBar";
-
 function Navbar() {
-  const navigate = useNavigate();
-  const [side, setSide] = useState(false);
-
-  const getProjectsHandler = () => {
-    navigate("/get-projects");
-  };
-
-  const onboardTalentHandler = () => {
-    navigate("/onboard-talent");
-  };
-  const openSide = () => {
-    setSide(!side);
-  };
   return (
     <>
       <div className=" rounded-full border border-solid border-gray-300 md:pl-5 py-4 md:pr-3 mt-5 md:mx-32 flex items-center justify-between">
@@ -33,33 +16,10 @@ function Navbar() {
             />
           </svg>
         </h1>
-
-        <div className="lg:flex gap-2 items-center p-3 hidden">
-          <button
-            onClick={getProjectsHandler}
-            className="text-xl rounded-full border border-solid border-gray-300 p-5 w-48"
-          >
-            Get Projects
-          </button>
-          <button
-            onClick={onboardTalentHandler}
-            className="text-xl  text-white bg-black p-5 rounded-full w-52"
-          >
-            Onboard Talent
-          </button>
-        </div>
-        <button
-          className=" lg:hidden rounded-full border border-solid border-gray-300 p-2 "
-          onClick={openSide}
-        >
-          {side ? (
-            <img src="/burger-side.svg" alt="menu" className="w-6" />
-          ) : (
-            <img src="/cross-svg.svg" alt="menu" className="w-6" />
-          )}
+        <button className=" rounded-full border border-solid border-gray-300 p-2 ">
+          <img src="/cross-svg.svg" alt="menu" className="w-6" />
         </button>
       </div>
-      {side && <SideBar />}
     </>
   );
 }
