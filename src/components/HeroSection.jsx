@@ -30,7 +30,7 @@ function HeroSection() {
               className=" w-[400px] h-[500px] rounded-3xl"
             />
 
-            <div className="bg-white hover:bg-green-200  cursor-pointer w-[180px] mt-20 z-10 absolute top-10 left-[-20%] flex flex-col  items-center p-3 rounded-xl shadow-xl gap-5">
+            <div className="bg-white hover:bg-green-200  cursor-pointer ml-14 lg:ml-0 w-[150px] lg:w-[180px] mt-20 z-10 absolute top-10 left-[-20%] flex flex-col  items-center p-3 rounded-xl shadow-xl gap-5">
               <h1 className="absolute top-0 left-3">
                 <img src="/hero-crown.svg" alt="crown" className="w-24" />
                 <span className="text-4xl font-semibold absolute top-14 left-9">

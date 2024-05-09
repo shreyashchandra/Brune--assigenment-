@@ -7,7 +7,9 @@ export const HomePage = () => {
   return (
     <div className="p-2 ">
       <Navbar />
-      <HeroSection />
+      <div className="w-96 m-auto md:w-full">
+        <HeroSection />
+      </div>
       <Accordian />
       <Footer />
     </div>
