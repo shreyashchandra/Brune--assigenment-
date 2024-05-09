@@ -14,7 +14,7 @@ function Navbar() {
   };
   return (
     <>
-      <div className=" rounded-full border border-solid border-gray-300 pl-5 py-4 pr-3 mt-5 mx-32 flex items-center justify-between">
+      <div className=" rounded-full border border-solid border-gray-300 md:pl-5 py-4 md:pr-3 mt-5 md:mx-32 flex items-center justify-between">
         <h1>
           <svg
             width="129"
